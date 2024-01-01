@@ -4,8 +4,8 @@ Files:
 - main.cpp : main method file
 - processor.h : processor code
 - memory.h : memory code
-- sample1-4.txt : samples provided by the instructor with desired outputs
-- sample5.txt : sample I wrote that prints first 30 numbers of the fibonacci sequence
+- sample1-4.txt : sample assembly provided by the instructor with desired outputs
+- sample5.txt : sample assembly that I wrote that prints first 30 numbers of the fibonacci sequence
 
 To compile and run (UNIX ONLY, C++11):
 
