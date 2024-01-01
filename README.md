@@ -1,11 +1,11 @@
 This project will take in fake assembly code and execute the instructions. The code manages 2 concurrent processes: one for the CPU and one for the MEM.
 
 Files:
-	- main.cpp : main method file
-	- processor.h : processor code
-	- memory.h : memory code
- 	- sample1-4.txt : samples provided by the instructor with desired outputs
-	- sample5.txt : sample I wrote that prints first 30 numbers of the fibonacci sequence
+- main.cpp : main method file
+- processor.h : processor code
+- memory.h : memory code
+- sample1-4.txt : samples provided by the instructor with desired outputs
+- sample5.txt : sample I wrote that prints first 30 numbers of the fibonacci sequence
 
 To compile and run (UNIX ONLY, C++11):
 
