@@ -1,3 +1,5 @@
+This project will take in fake assembly code and execute the instructions. The code manages 2 concurrent processes: one for the CPU and one for the MEM.
+
 Files:
 	main.cpp 	- main method file
 	processor.h - processor code
