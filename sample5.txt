@@ -1,0 +1,64 @@
+.0 //prints the first 30 numbers of the fibonacci sequence (adds the 2 preceeding numbers to get the new number) NOTE: first 2 numbers are a base case, (0, 1), so they are manually printed without computation
+
+1   //Load 0        Line 0 //AC contains 0
+0                   Line 1
+23  //print 0       Line 2
+30                  Line 3
+14  //CopyToX       Line 4 //X contains 0
+1   //Load 1        Line 5
+1                   Line 6
+23  //print 1       Line 7
+30                  Line 8
+1   //Load 1        Line 9
+1                   Line 10 //Y contains 1
+16  //CopyToY       Line 11 //Y contains 1
+
+1   //Load 0        Line 12 //main loop start: add X + Y, store in AC, print AC, print \n, copy Y to X, copy AC to Y
+0   //reset AC      Line 13
+10  //addX          Line 14
+11  //addY          Line 15 // AC = X+Y
+23  //callPrint     Line 16 //print AC and newline
+30                  Line 17
+27  //push AC       Line 18
+17  //AC = Y        Line 19
+14  //X = AC (= Y)  Line 20 //old X value lost, doesnt matter.
+28  //pop old AC    Line 21
+16  //Y = oldAC     Line 22
+23  //call dec      Line 23
+39                  Line 24
+2   //load counter to AC    Line 25
+500                         Line 26
+22  //loop back if counter != 0     Line 27
+12                           Line 28
+50  //end                   Line 29
+
+9   //FUNCTION print AC followed by newline     Line 30
+1                                               Line 31
+27  //push AC                                   Line 32
+1                                               Line 33
+10                                              Line 34
+9   //print \n                                  Line 35
+2                                               Line 36
+28  //pop back AC                               Line 37
+24  //return                                    Line 38
+
+
+15      //CopyFromX   //FUNCTION decrement counter in memory    Line 39
+27      //Push X      //push X (no need to push AC because it will be used for addition later anyway) Line 40
+2       //load from 500     Line 41
+500                         Line 42
+14      //copy counter to X     Line 43
+26      //X--                   Line 44
+15      //copy decremented counter to AC    Line 45
+7       //store new value at 500    Line 46
+500                                 Line 47
+28      //Pop X                     Line 48
+14      //RestoreX    //pop X       Line 49
+24      //return                    Line 50
+
+.500 //data for counter
+28                                  Line 500
+
+.1000 //do nothing on interrupt
+30 //IRet                           Line 1000
+
